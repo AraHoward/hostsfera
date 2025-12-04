@@ -173,14 +173,14 @@ main {
 
 .slider-foto {
     display: flex;
-    gap: 100px;
+    gap: 70px;
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
-    padding: 0 20px;
-    width: calc(100% - 40px);
     margin: 0 auto;
+    padding: 0 calc(50% - (min(100%, 400px) / 2));
+
 }
 
 .slider-foto::-webkit-scrollbar {
@@ -193,8 +193,8 @@ main {
 }
 
 .slider-img img {
-    height: 548px;
-    width: auto;
+    height: 460px;
+    width: 100%;
     border-radius: 12px;
     object-fit: cover;
     display: block;
@@ -205,8 +205,8 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -216,11 +216,11 @@ main {
 }
 
 .slider-button-down {
-    left: 50px;
+    left: 5px;
 }
 
 .slider-button-next {
-    right: 50px;
+    right: 5px;
 }
 
 .stars-sfera {
